@@ -1,0 +1,14 @@
+<template>
+
+    <lightning-card title= "Create new Opportunity" icon-name = "custom:custom13">
+        <lightning-record-form 
+        object-api-name= {OpportunityObject}
+        fields = {myFields}
+
+        onsuccesss= {handleOpportunityCreated}
+        suppress-bottom-bar=true
+        >
+        </lightning-record-form>
+    </lightning-card>
+    
+</template>

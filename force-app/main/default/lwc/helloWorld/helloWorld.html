@@ -1,20 +1,22 @@
 <template>
-<lightning-card title="Welcome" icon-name="custom:custom14">
+<lightning-card title="Welcome Anshul...!!!" icon-name="custom:custom14">
   <div class="slds-m-around_medium">
     <p> {greeting}</p>
-    <lightning-input label="This is label" value={text1} onchange={changeHandler}></lightning-input>
+    <lightning-input label="This is label"  value={text1} onchange={changeHandler}></lightning-input>
   </div>
 </lightning-card>
+
+
 
 <lightning-card title="Hey Buddy" icon-name="standard:event">
   <div class="slds-m-around_medium">
 
     <div class="slds-text-align_right">
          <lightning-button label="New" variant="success" onclick={handleClick}></lightning-button>
+         <lightning-button></lightning-button>
     </div>
 
-    <p> {greeting1}</p>
-    <lightning-input label="Type Anything" value={text2} onchange={changeHandler1}></lightning-input>
+    <p> you can add multiple lightning card in single template</p>
 
   </div>
 </lightning-card>

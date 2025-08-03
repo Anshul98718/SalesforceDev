@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Toggle Form">
+        <div class="slds-p-around_medium">
+            <lightning-input 
+                type="toggle" 
+                label="Show Form" 
+                checked={showForm} 
+                onchange={handleToggle}>
+            </lightning-input>
+
+            <template if:true={showForm}>
+
+                <div class="slds-m-top_medium">
+                    <lightning-input class="slds-text-title_bold" label="Name" value={name} onchange={handleInputChange} placeholder="Enter your Name here.............."></lightning-input>
+                    <lightning-input class="slds-text-title_bold" label="Email" type="email" value={email} onchange={handleInputChange} placeholder="Enter your Email here.............."></lightning-input>
+
+                    <lightning-button  class="slds-m-top_medium" label="Submit" onclick={handleSubmit}></lightning-button>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
